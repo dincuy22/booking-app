@@ -1,0 +1,96 @@
+[
+  {
+    "_id": "e0b4b048-d794-4ac5-bac2-fd6567418ca7",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:8800",
+    "url": "localhost:8800",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-13T06:14:15.264Z",
+    "modified": "2022-11-13T06:14:15.334Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e3792741-26a3-4208-90ab-e847c1c22b8b",
+    "colId": "history",
+    "containerId": "",
+    "name": "CREATE HOTEL",
+    "url": "localhost:8800/api/hotels",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-11-13T06:19:24.799Z",
+    "modified": "2022-11-13T06:38:18.555Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Hotel Bambang\",\n  \"type\": \"hotel\",\n  \"city\": \"sumedang\",\n  \"address\": \"cipaok\",\n  \"distance\": 400,\n  \"title\": \"best hotel in the city\",\n  \"desc\": \"hotel description\",\n  \"cheapestPrice\": 200\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "3e073f45-4a22-4cb7-ad84-11221daaff4a",
+    "colId": "history",
+    "containerId": "",
+    "name": "UPDATE HOTEL",
+    "url": "localhost:8800/api/hotels/63708d650fddf074074504a1",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2022-11-13T06:19:24.799Z",
+    "modified": "2022-11-13T06:31:08.117Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Hotel Jeeen\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "716234fd-7324-458c-a3a8-afa38c17f455",
+    "colId": "history",
+    "containerId": "",
+    "name": "GET HOTEL",
+    "url": "localhost:8800/api/hotels/63708d650fddf074074504a1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-13T06:19:24.799Z",
+    "modified": "2022-11-13T06:37:04.587Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "92ffbfdf-0a53-4830-b8b5-1f4d7ca0bd87",
+    "colId": "history",
+    "containerId": "",
+    "name": "GET ALL HOTEL",
+    "url": "localhost:8800/api/hotels",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-13T06:19:24.799Z",
+    "modified": "2022-11-13T06:48:38.947Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e7241ee1-cde0-4b9e-80f6-6489866280ae",
+    "colId": "history",
+    "containerId": "",
+    "name": "DELETE HOTEL",
+    "url": "localhost:8800/api/hotels/63708d650fddf074074504a1",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-11-13T06:19:24.799Z",
+    "modified": "2022-11-13T06:41:12.555Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
