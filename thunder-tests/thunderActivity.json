@@ -22,12 +22,12 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2022-11-13T06:19:24.799Z",
-    "modified": "2022-11-13T06:38:18.555Z",
+    "modified": "2022-11-13T10:26:54.760Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"Hotel Bambang\",\n  \"type\": \"hotel\",\n  \"city\": \"sumedang\",\n  \"address\": \"cipaok\",\n  \"distance\": 400,\n  \"title\": \"best hotel in the city\",\n  \"desc\": \"hotel description\",\n  \"cheapestPrice\": 200\n}",
+      "raw": "{\n  \"name\": \"Hotel Bambang 1\",\n  \"type\": \"hotel\",\n  \"city\": \"sumedang\",\n  \"address\": \"cipaok\",\n  \"distance\": 400,\n  \"title\": \"best hotel in the city\",\n  \"desc\": \"hotel description\",\n  \"cheapestPrice\": 200\n}",
       "form": []
     },
     "tests": []
@@ -74,7 +74,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2022-11-13T06:19:24.799Z",
-    "modified": "2022-11-13T09:03:16.828Z",
+    "modified": "2022-11-13T10:27:00.916Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -91,6 +91,77 @@
     "modified": "2022-11-13T06:41:12.555Z",
     "headers": [],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "1641cbd8-6c0c-459c-be88-0876395214a1",
+    "colId": "history",
+    "containerId": "",
+    "name": "REGISTER",
+    "url": "localhost:8800/api/auth/register",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-11-13T09:19:22.059Z",
+    "modified": "2022-11-13T09:35:31.976Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\": \"dincuy 1\",\n  \"email\": \"dincuy1@gmail.com\",\n  \"password\": \"1234\",\n  \"phone\": \"081222\",\n  \"city\": \"cipaok\",\n  \"country\": \"Sumedang\",\n  \"isAdmin\": true\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "1c6bac40-d5dc-49a2-a7ac-4831958490f2",
+    "colId": "history",
+    "containerId": "",
+    "name": "GET ALL USER",
+    "url": "localhost:8800/api/users",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-13T09:19:22.059Z",
+    "modified": "2022-11-13T09:39:54.112Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "380136db-1069-4f1c-81dc-8c7d6246feed",
+    "colId": "history",
+    "containerId": "",
+    "name": "LOGIN",
+    "url": "localhost:8800/api/auth/login",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-11-13T09:28:19.567Z",
+    "modified": "2022-11-13T10:26:49.278Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\": \"dincuy 1\",\n  \"password\": \"1234\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "c64f3808-79ce-4010-a52a-28118b8f7933",
+    "colId": "history",
+    "containerId": "",
+    "name": "CREATE ROOM",
+    "url": "localhost:8800/api/rooms/637090da7904b1e6aad61283/",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-11-13T10:36:55.281Z",
+    "modified": "2022-11-13T10:37:10.459Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"Dincuy room\",\n  \"price\": 100,\n  \"maxPeople\": 3,\n  \"desc\": \"Dincuy size bed, 1 bathroom, balcony\",\n  \"roomNumbers\": [{\"number\": 100},{\"number\": 101} ]\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
