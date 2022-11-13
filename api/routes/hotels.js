@@ -53,16 +53,12 @@ router.get("/:id", async (req, res) => {
 
 // GET ALL
 router.get("/", async (req, res, next) => {
-  console.log("hi i am hotels");
-  // return next() agar kode dibawahnya tidak dieksekusi
-  next();
-
   try {
     const hotels = await Hotel.find();
     res.status(200).json(hotels);
     next();
   } catch (error) {
-    res.status(500).json(error);
+    next(error);
   }
 });
 

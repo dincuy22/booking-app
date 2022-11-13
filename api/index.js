@@ -38,8 +38,16 @@ app.use("/api/auth", authRoute);
 app.use("/api/hotels", hotelsRoute);
 
 // dijalankan jika ada next() dari middleware sebelumnya
-app.use((req, res, next) => {
-  console.log("hai aim middleware");
+// error handle middleware
+app.use((err, req, res, next) => {
+  const errorStatus = err.status || 500;
+  const errorMessage = err.message || "Something went wrong!";
+  return res.status(errorStatus).json({
+    success: false,
+    status: errorStatus,
+    message: errorMessage,
+    stack: err.stack,
+  });
 });
 
 // jalankan server
